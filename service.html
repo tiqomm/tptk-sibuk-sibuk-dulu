@@ -320,6 +320,63 @@
   </section>
 
   <!-- end service section -->
+
+    <div class="slider-container">
+    <div class="slider-image-container">
+        <img id="gambarOtomatis" src="images/about-img.jpg" alt="Gambar Otomatis" class="slider-image">
+    </div>
+    <div class="slider-indicators" id="sliderIndicators"></div>
+</div>
+
+<script class="gambar3">
+    var gambar = ["images/about-img.jpg", "images/jago1.jpg", "images/jago2.jpg", "images/jago3.jpg", "images/jago4.jpg", "images/jago5.jpg"];
+    var indeksGambar = 0;
+    var elemenGambar = document.getElementById("gambarOtomatis");
+    var indikatorContainer = document.getElementById("sliderIndicators");
+
+    // Fungsi untuk membuat indikator
+    function buatIndikator() {
+        for (var i = 0; i < gambar.length; i++) {
+            var indikator = document.createElement("div");
+            indikator.className = "indicator";
+            indikator.dataset.index = i;
+            indikator.addEventListener("click", function() {
+                indeksGambar = parseInt(this.dataset.index);
+                updateGambar();
+            });
+            indikatorContainer.appendChild(indikator);
+        }
+        updateIndikator();
+    }
+     
+
+    // Fungsi untuk update gambar dan indikator
+    function updateGambar() {
+        elemenGambar.src = gambar[indeksGambar];
+        updateIndikator();
+    }
+
+    // Fungsi untuk update indikator aktif
+    function updateIndikator() {
+        var indikators = document.querySelectorAll(".indicator");
+        indikators.forEach(function(indikator, index) {
+            if (index === indeksGambar) {
+                indikator.classList.add("active");
+            } else {
+                indikator.classList.remove("active");
+            }
+        });
+    }
+
+    // Interval untuk mengganti gambar
+    setInterval(function() {
+        indeksGambar = (indeksGambar + 1) % gambar.length;
+        updateGambar();
+    }, 2000);
+
+    buatIndikator(); // Panggil fungsi untuk membuat indikator
+</script>
+    
     <!-- seminar proposal -->
   <div id="proposal"style="background-color: #553e3e; padding-bottom: 30px;">
     <H1 style="text-align: center; color: #ff5733;">Seminar Proposal</H1>
