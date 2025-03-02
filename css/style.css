@@ -69,19 +69,19 @@ html {
 }
 /* ... rest of your CSS ... */
 .slider-container {
-  width: 990px;
-  margin: 200px auto;
+  width: 100%; /* Menggunakan lebar 100% agar mencakup seluruh lebar layar */
+  margin: 0 auto; /* Menghapus margin vertikal yang besar */
   position: relative;
   overflow: hidden;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding-bottom: -900px;
-  padding-top: 10px;
+  padding: 20px; /* Menambahkan padding untuk memperluas area latar belakang */
+  background-color: #f1eeee;
+  box-sizing: border-box; /* Memastikan padding tidak menambah lebar total */
+  padding-left: 35px;
 }
 
 .slider-image-container {
   width: 100%;
-  height: 500px;
+  height: 500px; /* Atau sesuaikan dengan kebutuhan Anda */
   position: relative;
 }
 
@@ -90,10 +90,11 @@ html {
   border-radius: 10px;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 1000px;
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  margin-left: 410px;
 }
 
 .slider-indicators {
@@ -101,6 +102,7 @@ html {
   margin-top: 10px;
   position: relative;
   z-index: 2;
+  margin-bottom:-10px;
 }
 
 .slider-indicators .indicator {
@@ -111,6 +113,7 @@ html {
   margin: 0 5px;
   cursor: pointer;
   display: inline-block;
+  
 }
 
 .slider-indicators .indicator.active {
