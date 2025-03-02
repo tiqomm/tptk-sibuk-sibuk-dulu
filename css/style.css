@@ -5,19 +5,11 @@ body {
   background-color: #ffffff;
 }
 
+
+
 .brand-container span {
   font-size: 30px; /* Style default untuk layar lebar */
   margin-left: 80px;
-}
- body {
-    overflow-x: hidden;
-}
-
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
 }
 
 .brand-container img {
@@ -27,6 +19,7 @@ html {
   margin-left: -882px;
   border-radius: 100%;
   width: 70px;
+  
 }
 
 @media (max-width: 768px) {
