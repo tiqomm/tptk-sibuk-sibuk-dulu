@@ -125,6 +125,16 @@ body {
     height: 8px;
     margin: 0 3px; /* Jarak antar indikator lebih kecil */
   }
+  body {
+    overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 }
 .container1 {
   max-width: 900px;
