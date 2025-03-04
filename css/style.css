@@ -7,6 +7,61 @@ body {
 
 
 
+.kembali button {
+  display: inline-block;
+  padding: 10px 35px;
+  background-color: #ff8c00;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  margin-left: 800px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  border-radius: 5px;
+}
+
+.kembali button:hover {
+  background-color: transparent;
+  border-color: #e67e22;
+  color: #e67e22;
+}
+
+
+
+
+.download {
+  display: inline-block;
+  margin-left: -20px; 
+  margin-right: 55px; 
+  flex: 1; 
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  background-color: #dd1717; 
+  color: white; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  outline: none; /* Menghilangkan outline */
+  }
+
+  .download:hover {
+    background-color: transparent;
+    border-color: #c0392b;
+    color: #c0392b;
+  }
+
+.download:focus,
+.download:active {
+  outline: none; /* Menghilangkan outline saat focus dan active */
+  
+}
+
+
+
+
 .brand-container span {
   font-size: 30px; /* Style default untuk layar lebar */
   margin-left: 80px;
@@ -44,19 +99,7 @@ body {
   .gambar3{
     display: none;
   }
-  .slider-image-container {
-    height: 200px; /* Sesuaikan tinggi gambar di mobile */
-    width: 100px;
-  }
-  .slider-image{
-    width: 100px;
-  }
-
-  .slider-indicators .indicator {
-    width: 8px; /* Ukuran indikator lebih kecil di mobile */
-    height: 8px;
-    margin: 0 3px; /* Jarak antar indikator lebih kecil */
-  }
+  
   
   
 }
@@ -83,11 +126,11 @@ body {
   border-radius: 10px;
   top: 0;
   left: 0;
-  width: 1000px;
+  width: 990px;
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  margin-left: 322px;
+  margin-left: 410px;
 }
 
 .slider-indicators {
