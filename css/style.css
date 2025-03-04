@@ -5,6 +5,20 @@ body {
   background-color: #ffffff;
 }
 
+/* Media query untuk mobile (lebar maksimum 768px) */
+@media (max-width: 768px) {
+  .card .contact-title {
+    font-size: 0rem; /* Sembunyikan teks asli */
+    
+
+}
+
+.card .contact-title::after {
+    content: "Contact Person"; /* Teks pengganti untuk mobile */
+    font-size: 30px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    display: block; /* Menampilkan sebagai blok */
+}
+}
 
 
 .kembali button {
