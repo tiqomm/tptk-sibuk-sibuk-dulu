@@ -85,7 +85,15 @@ body {
 }
 
 
-
+/* Media query untuk ukuran mobile */
+@media (max-width: 768px) { 
+  .download {
+    margin-left: -10px; /* Sesuaikan margin kiri */
+    margin-right: 10px; /* Sesuaikan margin kanan */
+    padding: 8px 16px;  /* Sesuaikan padding */
+    font-size: 14px;   /* Sesuaikan ukuran font */
+  }
+}
 
 .brand-container span {
   font-size: 30px; /* Style default untuk layar lebar */
