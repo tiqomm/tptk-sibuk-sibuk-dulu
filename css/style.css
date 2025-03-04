@@ -28,6 +28,26 @@ body {
   color: #e67e22;
 }
 
+/* Media query untuk layar mobile (lebar maksimum 768px) */
+@media (max-width: 768px) {
+  .kembali button {
+    margin-left: 80px; /* Pusatkan tombol secara horizontal */
+    margin-right: auto; /* Pusatkan tombol secara horizontal */
+    width: 80%; /* Lebar tombol 90% dari lebar layar */
+    max-width: 200px; /* Batasi lebar maksimum tombol */
+  }
+  /* Ubah teks tombol menjadi "Kembali" */
+  .kembali button::before {
+    content: "Kembali";
+    font-size: 20px;
+  }
+
+  /* Hilangkan teks asli pada tombol */
+  .kembali button {
+    font-size: 0px;
+  }
+}
+
 
 
 
