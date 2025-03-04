@@ -30,6 +30,11 @@ body {
 
 /* Media query untuk layar mobile (lebar maksimum 768px) */
 @media (max-width: 768px) {
+
+ body {
+    overflow-x: hidden; /* Menyembunyikan luapan horizontal */
+  }
+  
   .kembali button {
     margin-left: 80px; /* Pusatkan tombol secara horizontal */
     margin-right: auto; /* Pusatkan tombol secara horizontal */
@@ -100,24 +105,30 @@ body {
 @media (max-width: 768px) {
   .brand-container {
     display: none;
+    width: 100%;
     
   }
   .judul{
     display: none;
+    width: 100%;
   }
   .gambar1{
     display: none;
+    width: 100%;
 
   }
   .brand-container span {
    display: none;
+    width: 100%;
   }
 
   .gambar2{
     display: none;
+    width: 100%;
   }
   .gambar3{
     display: none;
+    width: 100%;
   }
   
   
